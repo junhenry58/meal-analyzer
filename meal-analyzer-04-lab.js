@@ -1,6 +1,6 @@
 // get the DOM elements:
-const fileInput = document.getElementById("input");
-const uploadedImg = document.getElementById("uploaded-img");
+const fileInput = document.querySelector("input");
+const uploadedImg = document.querySelector("uploaded-img");
 const sendBtn = document.querySelector("button");  //Analyze button
 
 const spinnerWrapper = document.querySelector("#spinner-wrapper");
