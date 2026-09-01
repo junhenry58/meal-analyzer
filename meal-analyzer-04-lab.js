@@ -1,7 +1,8 @@
 // get the DOM elements:
-const fileInput = document.querySelector("input");
+const fileInput = document.getElementById("input");
+const uploadedImg = document.getElementById("uploaded-img");
 const sendBtn = document.querySelector("button");  //Analyze button
-const uploadedImg = document.querySelector("#uploaded-img");
+
 const spinnerWrapper = document.querySelector("#spinner-wrapper");
 const mealNameH3 = document.querySelector("#meal-name"); //put H3 to avoid confusion, not a string, a tag
 const descriptionP = document.querySelector("#description"); 
