@@ -74,7 +74,7 @@ def analyze_meal(base64_img):
 
 @app.route("/")
 def index():
-    return render_template("meal-analyzer-04.html")
+    return render_template("index.html")
 
 @app.route("/upload", methods=["POST"])
 @limiter.limit("10 per hour")
