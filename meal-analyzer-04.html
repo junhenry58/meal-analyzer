@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Meal Analyzer</title>
+    <link href="../static/css/meal-analyzer-04.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>AI Meal Analyzer</h1>
+        <h3>Upload a meal image to AI to get preparation instructions, calorie counts and macronutrients (protein, fat, carbs)</h3>
+        <input type="file" accept="image/png, image/jpg, image/jpeg, image/webp, image/gif">
+        <button>Analyze</button>
+        <div id="spinner-wrapper"> 
+            <div class="spinner"></div>
+            <p>Analyzing meal..</p>
+        </div>
+        <img id="uploaded-img" src=""> 
+       <!-- empty image holder and empty source, ready to receive -->
+        <!-- <h3 id="meal-name"> Meal Name</h3>
+        <h3 id="description"> Description</h3>
+        <h3 id="calorie-count"> Calories</h3>
+        <h3 id="grams"> Macronutrients</h3> -->
+        <section id="meal-results">
+        <div class="result-card">
+        <h3>Meal Name</h3>
+        <p id="meal-name">Waiting for analysis...</p>
+        </div>
+
+         <div class="result-card">
+        <h3>Description</h3>
+        <p id="description">Waiting for analysis...</p>
+         </div>
+
+         <div class="result-card">
+        <h3>Prep Instructions</h3>
+        <p id="prep">Waiting for analysis...</p>
+         </div>
+
+         <div class="result-card">
+        <h3>Total Calories</h3>
+        <p id="calorie-count">Waiting for analysis...</p>
+         </div>
+
+          <div class="result-card">
+        <h3>Calories Per Item</h3>
+        <p id="cals-per-item">Waiting for analysis...</p>
+         </div>
+
+
+        <div class="result-card">
+        <h3>Macronutrients</h3>
+        <div id="grams">Waiting for analysis...</div>
+        </div>
+        </section>
+
+    </div>
+    <script src="{{ url_for('static', filename='js/meal-analyzer-04-lab.js') }}?v=7"></script>
+</body>
+</html>
