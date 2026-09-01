@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, jsonify
 from flask_cors import CORS
 from flask_limiter import Limiter
 from flask_limiter.util import get_remote_address
-import openai
+from openai import OpenAI
 import json
 import base64
 import os
@@ -23,7 +23,7 @@ limiter = Limiter(
 )
 
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-client = openai.Client(api_key=OPENAI_API_KEY)
+client = OpenAI(api_key=OPENAI_API_KEY)
 
 #define the fn that sends the img data to openai model for analysis
 def analyze_meal(base64_img):
