@@ -135,42 +135,7 @@ function sendImageForAnalysis() {
         gramsP.textContent = macronutrients
             ? `Protein: ${macronutrients.protein}g | Fat: ${macronutrients.fat}g | Carbs: ${macronutrients.carbs}g`
             : "Macronutrient information unavailable";
-        // conditionally output vitamin and / or mineral data:
-
-        // if(resObj.vitamins) {
-        //     V = resObj.vitamins; // make shorter prop name
-        //     vitsP.innerHTML = "<b>Vitamins: mg - rda</b>";
-        //     vitsP.innerHTML += `<br>A (retinol): ${V.A.mg}mg - ${V.A.rda}%`;
-        //     vitsP.innerHTML += `<br>B1 (thiamine): ${V.B1.mg}mg - ${V.B1.rda}%`;
-        //     vitsP.innerHTML += `<br>B2 (riboflavin): ${V.B2.mg}mg - ${V.B2.rda}%`;
-        //     vitsP.innerHTML += `<br>B3 (niacin): ${V.B3.mg}mg - ${V.B3.rda}%`;
-        //     vitsP.innerHTML += `<br>B5 (pantonthenic acid): ${V.B5.mg}mg - ${V.B5.rda}%`;
-        //     vitsP.innerHTML += `<br>B6 (pyridoxine): ${V.B6.mg}mg - ${V.B6.rda}%`;
-        //     vitsP.innerHTML += `<br>B7 (biotin): ${V.B7.mg}mg - ${V.B7.rda}%`;
-        //     vitsP.innerHTML += `<br>B9 (folic acid): ${V.B9.mg}mg - ${V.B9.rda}%`;
-        //     vitsP.innerHTML += `<br>B12 (cyanocobalamin): ${V.B12.mg}mg - ${V.B12.rda}%`;
-        //     vitsP.innerHTML += `<br>C (ascorbic acid): ${V.C.mg}mg - ${V.C.rda}%`;
-        //     vitsP.innerHTML += `<br>D2 (ergocalciferol): ${V.D2.mg}mg - ${V.D2.rda}%`;
-        //     vitsP.innerHTML += `<br>D3 (cholecalciferol): ${V.D3.mg}mg - ${V.D3.rda}%`;
-        //     vitsP.innerHTML += `<br>E (alpha-tocopherol): ${V.E.mg}mg - ${V.E.rda}%`;
-        // }
-        // if(resObj.minerals) {
-        //     M = resObj.minerals; // make shorter prop name
-        //     minsP.innerHTML = "<b>Minerals: mg - rda</b>";
-        //     minsP.innerHTML += `<br>Calcium (Ca): ${M.Ca.mg}mg - ${M.Ca.rda}%`;
-        //     minsP.innerHTML += `<br>Chromium (Cr): ${M.Cr.mg}mg - ${M.Cr.rda}%`;
-        //     minsP.innerHTML += `<br>Copper (Cu): ${M.Cu.mg}mg - ${M.Cu.rda}%`;
-        //     minsP.innerHTML += `<br>Iodine (I): ${M.I.mg}mg - ${M.I.rda}%`;
-        //     minsP.innerHTML += `<br>Iron (Fe): ${M.Fe.mg}mg - ${M.Fe.rda}%`;
-        //     minsP.innerHTML += `<br>Magnesium (Mg): ${M.Mg.mg}mg - ${M.Mg.rda}%`;
-        //     minsP.innerHTML += `<br>Manganese (Mn): ${M.Mn.mg}mg - ${M.Mn.rda}%`;
-        //     minsP.innerHTML += `<br>Phosphorous (P): ${M.P.mg}mg - ${M.P.rda}%`;
-        //     minsP.innerHTML += `<br>Potassium (K): ${M.K.mg}mg - ${M.K.rda}%`;
-        //     minsP.innerHTML += `<br>Selenium (Se): ${M.Se.mg}mg - ${M.Se.rda}%`;
-        //     minsP.innerHTML += `<br>Sodium (Na): ${M.Na.mg}mg - ${M.Na.rda}%`;
-        //     minsP.innerHTML += `<br>Sulfur (S): ${M.S.mg}mg - ${M.S.rda}%`;
-        //     minsP.innerHTML += `<br>Zinc (Zn): ${M.Zn.mg}mg - ${M.Zn.rda}%`;
-        // }
+       
         
     })  
     .catch(error => {
