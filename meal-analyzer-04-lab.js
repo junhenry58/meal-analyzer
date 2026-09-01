@@ -86,7 +86,7 @@ function sendImageForAnalysis() {
 
 
     // sends the formData containing the img data to flask using fetch()
-    fetch("/upload", {
+    fetch("https://meal-analyzer-koy3.onrender.com/upload", {
         method: "POST",
         body: formData,
         signal: currentController.signal
