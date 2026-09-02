@@ -16,7 +16,7 @@ __pycache__/
 .DS_Store
 **/.DS_Store
 
-static/text/api-key.txt
+api-key.txt
 
 #ignore windows sys files
 Thumbs.db
@@ -61,21 +61,3 @@ uploads/
 *.gz 
 *.7z 
 *.rar
-
-# Course exercises not used by the deployed Meal Analyzer 04 lab
-DONE/
-server-meal-analyzer-02.py
-server-meal-analyzer-03.py
-server-meal-analyzer-04.py
-templates/meal-analyzer-00.html
-templates/meal-analyzer-01.html
-templates/meal-analyzer-02.html
-templates/meal-analyzer-03.html
-static/css/meal-analyzer.css
-static/js/meal-analyzer-00.js
-static/js/meal-analyzer-01.js
-static/js/meal-analyzer-02.js
-static/js/meal-analyzer-03.js
-static/js/meal-analyzer-04.js
-static/images/
-static/text/
