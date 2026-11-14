@@ -23,7 +23,7 @@ limiter = Limiter(
 )
 
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-client = OpenAI(api_key=OPENAI_API_KEY)
+client = OpenAI(api_key=key_V5XYpbEKEXcS0HrJ)
 
 #define the fn that sends the img data to openai model for analysis
 def analyze_meal(base64_img):
